@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+    
+    </ion-buttons>
+    <ion-title>Trabalho de ts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<app-post></app-post> <!-- o nome desse maluco aqui se acha no arquivo post.component.ts, e quando fazemos isso estamos chamando ele -->
+	<ion-card>
+		<ion-icon size="large" name="thumbs-up" (click)="likes(post)" color="{{post.estadoDoLike ? 'success':'danger'}}"></ion-icon>  
+		<p>{{post.numeroDeLikes}}</p>
+	</ion-card>
+	
+	<ion-icon class = "perigo" *ngIf = "post.spoiler" name= "warning" color="danger" size="large"> </ion-icon>
+	
+</ion-content>
+
+
+<!-- <ion-content>
+
+<ion-card class ="welcome-card" *ngFor="let post of posts">
+
+<img [src]=post.photo/>
+
+<ion-card-header>
+   <ion-card-title>{{post.publisher}}</ion-card-title>
+   <ion-card-subtitle>{{post.date}}</ion-card-subtitle>
+   <ion-icon *ngIf="o mesmo de cima </ion-icon>{{post.reactions.like.number}}
+</ion-card-header>
+<ion-card-content>
+<p>{{post.content}}</p>
+</ion-card-content>
+
+</ion-card>
+</ion-content> -->
+
+
+

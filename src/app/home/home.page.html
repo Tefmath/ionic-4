@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="primary" class="barramenu">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      FRIENDFLIX
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+<ion-fab-button>
+<ion-icon name="add"></ion-icon>
+</ion-fab-button>
+</ion-fab>
+
+
+
+  <!-- <ion-card class="welcome-card">
+    <img src="/assets/shapes.svg" alt=""/>
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Welcome, {{post.nomeDoUsuario}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Seja bem vinda ao FriendFlix. Comente sobre suas séries favoritas.
+		Ache fãs das suas séries favoritas, como {{post.episodioRelacionado}}.
+      </p>
+    </ion-card-content>
+  </ion-card> -->
+
+  <ion-card class="welcome-card">
+    <img src="/assets/poke.jpg" alt=""/>
+    <ion-row>
+      <ion-card-subtitle>Animação, Aventura</ion-card-subtitle>
+      </ion-row>
+      <ion-row class="ion-justify-content-around">
+      <ion-card-title>Pokemon</ion-card-title>
+      <ion-chip>4.9</ion-chip>
+   </ion-row>
+   <ion-card-content>
+      <ion-button>Quero Ver</ion-button>
+      <ion-button>Ja Vi</ion-button>
+    </ion-card-content>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+<ion-fab-button>
+<ion-icon name="share"></ion-icon>
+</ion-fab-button>
+<ion-fab-list side="top">
+<ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+</ion-fab-list>
+</ion-fab>
+  </ion-card>
+
+<ion-card class="welcome-card">
+    <img src="/assets/avatar.jpg" alt=""/>
+    <ion-row>
+      <ion-card-subtitle>Animação, Aventura</ion-card-subtitle>
+      </ion-row>
+      <ion-row class="ion-justify-content-around">
+      <ion-card-title>Pokemon</ion-card-title>
+      <ion-chip>4.9</ion-chip>
+   </ion-row>
+   <ion-card-content>
+      <ion-button>Quero Ver</ion-button>
+      <ion-button>Ja Vi</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://ionicframework.com/docs/">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Séries</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-label>Comunidade</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/layout/structure">
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-label>Change Your App Layout</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/theming/basics">
+      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+      <ion-label>Theme Your App</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
