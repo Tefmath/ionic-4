@@ -9,7 +9,7 @@ export class FavoritesPage implements OnInit {
 post;
 	
   constructor() {
-   this.post = {
+   this.post = [{
 		 "nomeDoUsuario":"Tef",
 		 "texto": "xabu",
 		 "horario": "11:00",
@@ -21,22 +21,37 @@ post;
 		 "anexo": "tef.jpg",
 		 "quantidadeDeComp": 15,
 		 "spoiler": true
+		 
 
-        }
+   }, {
+		 "nomeDoUsuario":"jubs",
+		 "texto": "hehehe",
+		 "horario": "20:00",
+		 "numeroDeLikes": 20,
+		 "numeroDeDislikes": 10,
+		 "episodioRelacionado": "Buffy",
+		 "respostasDoPost": "koe",
+		 "estadoDoLike": false,
+		 "anexo": "tef.jpg",
+		 "quantidadeDeComp": 15,
+		 "spoiler": true
+		 
+
+   }]
  }
 
   ngOnInit() {
   }
 
-	likes(post){
-		if (this.post.estadoDoLike == false){
-			this.post.estadoDoLike = true;
-			this.post.numeroDeLikes++;
+	likes(el){
+		if (el.estadoDoLike == false){
+			el.estadoDoLike = true;
+			el.numeroDeLikes++;
 			return
 		} 
-		if (this.post.estadoDoLike == true){
-			this.post.estadoDoLike = false;
-			this.post.numeroDeLikes--;
+		if (el.estadoDoLike == true){
+			el.estadoDoLike = false;
+			el.numeroDeLikes--;
 		}
 		
 	}

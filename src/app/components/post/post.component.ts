@@ -9,10 +9,11 @@ export class PostComponent implements OnInit { // o class é o nome do nosso com
  
  public title: string = "oi" // slide DataB 7 //
  
- public user: User = { // slide DataB 9 //
-	 nome: "Tef",
+public user = { // slide DataB 9 //
+	nome: "Tef",
 	 idade: 21
- }
+ } 
+ 
   constructor() { }
 
   ngOnInit() {}
